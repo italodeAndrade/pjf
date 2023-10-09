@@ -3,8 +3,8 @@ public abstract class imoveis {
     // Atributos de imoveis
     double area;
     String cep;
-    String endereço;
-    String ano_construção;
+    String endereco;
+    String ano_construcao;
     double preço;
     boolean disp_venda;
     boolean disp_alugel;
@@ -14,13 +14,13 @@ public abstract class imoveis {
     boolean semi_mobiliado;
 
     // Construtor de imoveis
-    public imoveis(double area, String cep, String endereco, String anoConstrucao, double preco,
+    public imoveis(double area, String cep, String endereco, String ano_construcao, double preco,
                    boolean dispVenda, boolean dispAluguel, int numQuartos,
                    double vlrAluguel, boolean mobiliado, boolean semiMobiliado) {
         this.area = area;
         this.cep = cep;
-        this.endereço = endereco;
-        this.ano_construção = anoConstrucao;
+        this.endereco = endereco;
+        this.ano_construcao = ano_construcao;
         this.preço = preco;
         this.disp_venda = dispVenda;
         this.disp_alugel = dispAluguel;
@@ -51,7 +51,7 @@ public abstract class imoveis {
     // deixamos esse método ou removemos ele ?
     public int verificarIdade() {
         int anoAtual = 2023;
-        int idade = anoAtual - Integer.parseInt(ano_construção);
+        int idade = anoAtual - Integer.parseInt(ano_construcao);
         return idade;
     }
 
