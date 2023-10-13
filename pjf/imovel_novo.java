@@ -1,8 +1,9 @@
-public class imovel_novo extends imoveis {
+public class Imovel_novo extends Imoveis {
 
     // Construtor
-    public imovel_novo(double area, String cep, String endereco, String ano_construcao, double preco, boolean dispVenda, boolean dispAluguel, int numQuartos, double vlrAluguel, boolean mobiliado, boolean semiMobiliado) {
-        super(area, cep, endereco, ano_construcao, preco, dispVenda, dispAluguel, numQuartos, vlrAluguel, mobiliado, semiMobiliado);
+    public Imovel_novo(double area, String cep, String endereco, String ano_construcao, double preco, 
+    boolean dispVenda, boolean dispAluguel, int numQuartos, double vlrAluguel, boolean mobiliado, boolean semiMobiliado,int id_imovel) {
+        super(area, cep, endereco, ano_construcao, preco, dispVenda, dispAluguel, numQuartos, vlrAluguel, mobiliado, semiMobiliado,id_imovel);
     }
 
     //Métodos

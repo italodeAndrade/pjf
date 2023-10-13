@@ -1,4 +1,4 @@
-public abstract class imoveis {
+public abstract class Imoveis {
 
     // Atributos de imoveis
     double area;
@@ -12,11 +12,14 @@ public abstract class imoveis {
     double vlr_alugel;
     boolean mobiliado;
     boolean semi_mobiliado;
+    Pessoa fiador;
+    Pessoa comprador;
+    int id_imovel;
 
     // Construtor de imoveis
-    public imoveis(double area, String cep, String endereco, String ano_construcao, double preco,
+    public Imoveis(double area, String cep, String endereco, String ano_construcao, double preco,
                    boolean dispVenda, boolean dispAluguel, int numQuartos,
-                   double vlrAluguel, boolean mobiliado, boolean semiMobiliado) {
+                   double vlrAluguel, boolean mobiliado, boolean semiMobiliado, int id_imovel) {
         this.area = area;
         this.cep = cep;
         this.endereco = endereco;
@@ -28,6 +31,9 @@ public abstract class imoveis {
         this.vlr_alugel = vlrAluguel;
         this.mobiliado = mobiliado;
         this.semi_mobiliado = semiMobiliado;
+        this.fiador=null;
+        this.comprador=null;
+        this.id_imovel=id_imovel;
     }
 
     // Métodos de imoveis

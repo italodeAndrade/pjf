@@ -1,11 +1,20 @@
-public class corretor extends pessoa {
+public class Corretor extends Pessoa {
     double comissão;
 
-    public corretor(String CPF, String nome, String email, String endereço, int telefone, String dt_nascimento,
-            float renda_presumida, int RG, int cnpj,double comissão,String comprovante_residencia) {
-        super(CPF, nome, email, endereço, telefone, dt_nascimento, renda_presumida, RG, cnpj, comprovante_residencia);
+    public Corretor( String nome, String email, String endereço, int telefone, String dt_nascimento,
+            float renda_presumida, int RG,double comissão,double saldo) {
+        super(nome, email, endereço, telefone, dt_nascimento, renda_presumida, RG,saldo);
         this.comissão=comissão;
         
     }
+
+    public void receber_comissao(double valor){
+        comissão+= valor;
+        System.out.println(nome+"recebeu a a sua comissão de "+comissão +" reais");
+    }
     
+    public void depositar_salario(double salario){
+        saldo+=comissão;
+        System.out.println("foi depositado "+comissão+" na conta do corretor "+nome);
+    }
 }

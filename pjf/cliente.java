@@ -1,11 +1,7 @@
-public class cliente extends pessoa {
+public class Cliente extends Pessoa {
 
-    public cliente(String CPF, String nome, String email, String endereço, int telefone, String dt_nascimento,
-            float renda_presumida, int RG, int cnpj,String comprovante_residencia) {
-        super(CPF, nome, email, endereço, telefone, dt_nascimento, renda_presumida, RG, cnpj,comprovante_residencia);
-
-
+    public Cliente( String nome, String email, String endereço, int telefone, String dt_nascimento,
+            float renda_presumida, int RG,double saldo) {
+        super(nome, email, endereço, telefone, dt_nascimento, renda_presumida, RG, saldo );
     }
-
-    
 }

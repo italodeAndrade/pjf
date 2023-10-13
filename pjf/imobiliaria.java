@@ -1,8 +1,10 @@
-public class imobiliaria {
+public class Imobiliaria {
     String CNPJ;
     String junta_cmr;
     double alv_funcion;
     String cntrt_locação;
+    double saldo;
+    
 
     
 }

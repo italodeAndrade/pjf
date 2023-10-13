@@ -1,8 +1,10 @@
-public class imovel_Velho extends imoveis {
+public class Imovel_Velho extends Imoveis {
 
-    public imovel_Velho(double area, String cep, String endereco, String anoConstrucao, double preco, boolean dispVenda, boolean dispAluguel, int numQuartos, double vlrAluguel, boolean mobiliado, boolean semiMobiliado) {
-        super(area, cep, endereco, anoConstrucao, preco, dispVenda, dispAluguel, numQuartos, vlrAluguel, mobiliado, semiMobiliado);
+    public Imovel_Velho(double area, String cep, String endereco, String ano_construcao, double preco, 
+    boolean dispVenda, boolean dispAluguel, int numQuartos, double vlrAluguel, boolean mobiliado, boolean semiMobiliado,int id_imovel) {
+        super(area, cep, endereco, ano_construcao, preco, dispVenda, dispAluguel, numQuartos, vlrAluguel, mobiliado, semiMobiliado,id_imovel);
     }
+
 
     //calcular o valor do imóvel velho
     @Override
