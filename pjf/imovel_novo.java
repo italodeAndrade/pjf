@@ -1,4 +1,5 @@
 public class Imovel_novo extends Imoveis {
+    
 
     // Construtor
     public Imovel_novo(double area, String cep, String endereco, String ano_construcao, double preco, 

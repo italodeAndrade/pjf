@@ -1,4 +1,4 @@
-public class Pessoa {
+public abstract class Pessoa {
   
     String nome;
     String email;
@@ -24,21 +24,6 @@ public class Pessoa {
 
     }
 
-    public void comprar_imovel(Imoveis imovel,Pessoa individuo){
-        
-        imovel.disp_alugel=false;
-        imovel.disp_venda=false;
-        imovel.comprador=individuo;
-        System.out.println("o imovel com id: "+imovel.id_imovel+" foi comprado");
-
-    }
-
-    public void alugar_imovel(Imoveis imovel,Pessoa individuo){
-        imovel.disp_alugel=false;
-        imovel.fiador=individuo;
-        System.out.println("o imovel com id: "+imovel.id_imovel+" foi alugado");
-    }
-
     public void depositar_salario(double valor){
         saldo+=valor;
         System.out.println("foi adicionado "+valor+" a conta");
@@ -50,9 +35,9 @@ public class Pessoa {
 
     }
 
-    public void dispo_imovel(Imoveis imovel){
+    public void disponibilizar_imv(Imoveis imovel){
         imovel.disp_alugel=true;
         imovel.disp_venda=true;
+        System.out.println(" o imovel de id "+imovel.id_imovel+ " aogra esta livre");
     }
-
 }
