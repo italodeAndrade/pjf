@@ -1,4 +1,4 @@
-public abstract class Imoveis {
+public abstract class Imoveis implements contrato_aluguel{
 
     // Atributos de imoveis
     double area;
@@ -15,11 +15,15 @@ public abstract class Imoveis {
     Pessoa fiador;
     Pessoa comprador;
     int id_imovel;
+    String dt_inic_aluguel;
+    String dt_fn_aluguel;
+
 
     // Construtor de imoveis
     public Imoveis(double area, String cep, String endereco, String ano_construcao, double preco,
                    boolean dispVenda, boolean dispAluguel, int numQuartos,
-                   double vlrAluguel, boolean mobiliado, boolean semiMobiliado, int id_imovel) {
+                   double vlrAluguel, boolean mobiliado, boolean semiMobiliado,
+                   int id_imovel, String dt_inic_aluguel, String dt_fn_aluguel) {
         this.area = area;
         this.cep = cep;
         this.endereco = endereco;
@@ -34,6 +38,8 @@ public abstract class Imoveis {
         this.fiador=null;
         this.comprador=null;
         this.id_imovel=id_imovel;
+        this.dt_inic_aluguel = dt_inic_aluguel;
+        this.dt_fn_aluguel = dt_fn_aluguel;
     }
 
     // Métodos de imoveis
