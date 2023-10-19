@@ -1,10 +1,11 @@
+
 public abstract class Pessoa {
 
     //atributos de pessoa
     String nome;
     String email;
     String endereço;
-    int telefone;
+    long telefone;
     String dt_nascimento;
     float renda_presumida;
     int RG;
@@ -12,7 +13,7 @@ public abstract class Pessoa {
     double poupança;
 
     //construtor de pessoa
-    public Pessoa (String nome,String email,String endereço,int telefone,
+    public Pessoa (String nome,String email,String endereço,long telefone,
     String dt_nascimento,float renda_presumida,int RG,double saldo){
 
         this.nome=nome;

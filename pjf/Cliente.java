@@ -1,7 +1,7 @@
 //declaração da classe herdada de pessoa
 public abstract class Cliente extends Pessoa {
     int id_imv_c;
-    public Cliente( String nome, String email, String endereço, int telefone, String dt_nascimento,
+    public Cliente( String nome, String email, String endereço, long telefone, String dt_nascimento,
             float renda_presumida, int RG,double saldo, int id_imv_c) {
         super(nome, email, endereço, telefone, dt_nascimento, renda_presumida, RG, saldo );
         this.id_imv_c=id_imv_c;

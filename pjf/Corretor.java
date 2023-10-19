@@ -1,6 +1,6 @@
 public class Corretor extends Pessoa {
     double comissão;
-    public Corretor( String nome, String email, String endereço, int telefone, String dt_nascimento,
+    public Corretor( String nome, String email, String endereço, long telefone, String dt_nascimento,
             float renda_presumida, int RG,double comissão,double saldo) {
         super(nome, email, endereço, telefone, dt_nascimento, renda_presumida, RG,saldo);
         this.comissão=comissão;

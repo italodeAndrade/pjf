@@ -6,7 +6,7 @@ public class Fiador extends Pessoa {
      String CNPJ;
 
      //contrutor
-     public Fiador(String CPF, String nome, String email, String endereço, int telefone, String dt_nascimento,
+     public Fiador(String CPF, String nome, String email, String endereço, long telefone, String dt_nascimento,
                float renda_presumida, int RG, String CNPJ,int id_imovel,double saldo) {
           super(nome, email, endereço, telefone, dt_nascimento, renda_presumida, RG, saldo);
           this.id_imovel=id_imovel;
