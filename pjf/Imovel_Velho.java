@@ -1,11 +1,9 @@
 public class Imovel_Velho extends Imoveis {
-
-    //Construtor
-    public Imovel_Velho(double area, String cep, String endereco, String ano_construcao, double preco, 
-    boolean dispVenda, boolean dispAluguel, int numQuartos, double vlrAluguel, boolean mobiliado, boolean semiMobiliado,int id_imovel) {
-        super(area, cep, endereco, ano_construcao, preco, dispVenda, dispAluguel, numQuartos, vlrAluguel, mobiliado, semiMobiliado,id_imovel);
+    public Imovel_Velho(double area, String cep, String endereco, String ano_construcao, double preco, boolean dispVenda, boolean dispAluguel, int numQuartos, double vlrAluguel, boolean mobiliado, boolean semiMobiliado, int id_imovel, String dt_inic_aluguel, String dt_fn_aluguel) {
+        super(area, cep, endereco, ano_construcao, preco, dispVenda, dispAluguel, numQuartos, vlrAluguel, mobiliado, semiMobiliado, id_imovel, dt_inic_aluguel, dt_fn_aluguel);
     }
 
+    //Construtor
 
     //calcular o valor do imóvel velho
     @Override
@@ -49,6 +47,21 @@ public class Imovel_Velho extends Imoveis {
         }
 
         return valorAtual;
+    }
+
+    @Override
+    public double calcularValorAluguel() {
+        return 0;
+    }
+
+    @Override
+    public String getDtInicAluguel() {
+        return null;
+    }
+
+    @Override
+    public String getDtFnAluguel() {
+        return null;
     }
 }
 

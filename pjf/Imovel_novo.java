@@ -1,13 +1,14 @@
 public class Imovel_novo extends Imoveis {
-    
-
-    // Construtor
-    public Imovel_novo(double area, String cep, String endereco, String ano_construcao, double preco, 
-    boolean dispVenda, boolean dispAluguel, int numQuartos, double vlrAluguel, boolean mobiliado, boolean semiMobiliado,int id_imovel) {
-        super(area, cep, endereco, ano_construcao, preco, dispVenda, dispAluguel, numQuartos, vlrAluguel, mobiliado, semiMobiliado,id_imovel);
+    public Imovel_novo(double area, String cep, String endereco, String ano_construcao, double preco, boolean dispVenda, boolean dispAluguel, int numQuartos, double vlrAluguel, boolean mobiliado, boolean semiMobiliado, int id_imovel, String dt_inic_aluguel, String dt_fn_aluguel) {
+        super(area, cep, endereco, ano_construcao, preco, dispVenda, dispAluguel, numQuartos, vlrAluguel, mobiliado, semiMobiliado, id_imovel, dt_inic_aluguel, dt_fn_aluguel);
     }
 
+
+    // Construtor
+
+
     //Métodos
+
 
     // calcular o valor do imóvel novo
     @Override
@@ -47,6 +48,21 @@ public class Imovel_novo extends Imoveis {
     @Override
     public double calcularDesvalorizacao(int anos) {
         return calcular_valor_imovel();
+    }
+
+    @Override
+    public double calcularValorAluguel() {
+        return 0;
+    }
+
+    @Override
+    public String getDtInicAluguel() {
+        return null;
+    }
+
+    @Override
+    public String getDtFnAluguel() {
+        return null;
     }
 }
 
