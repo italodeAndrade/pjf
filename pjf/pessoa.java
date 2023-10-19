@@ -1,5 +1,6 @@
 public abstract class Pessoa {
-  
+
+    //atributos de pessoa
     String nome;
     String email;
     String endereço;
@@ -10,6 +11,7 @@ public abstract class Pessoa {
     double saldo;
     double poupança;
 
+    //construtor de pessoa
     public Pessoa (String nome,String email,String endereço,int telefone,
     String dt_nascimento,float renda_presumida,int RG,double saldo){
 
@@ -23,18 +25,18 @@ public abstract class Pessoa {
         this.saldo = saldo;
 
     }
-
+    //metodo de soma de salario
     public void depositar_salario(double valor){
         saldo+=valor;
         System.out.println("foi adicionado "+valor+" a conta");
     }
-
+    //metodo de alteração do atributo de endereço
     public void mudar_endereço(String n_endereço, Pessoa individuo){
         individuo.endereço=n_endereço;
         System.out.println("o novo endereço do individuo "+individuo.nome+" é "+n_endereço);
 
     }
-
+    //metodo para declarar um imovel como disponivel para venda ou aluguel
     public void disponibilizar_imv(Imoveis imovel){
         imovel.disp_alugel=true;
         imovel.disp_venda=true;

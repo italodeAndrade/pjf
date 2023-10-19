@@ -50,7 +50,7 @@ public abstract class Imoveis {
         return desconto;
     }
 
-    // a vlaorização e desvalorização acho mais coerente apenas para imoveis velhos, portanto são abstratos
+    // a valorização e desvalorização acho mais coerente apenas para imoveis velhos, portanto são abstratos
     public abstract double calcularValorizacao(int anos);
     public abstract double calcularDesvalorizacao(int anos);
 
@@ -66,6 +66,7 @@ public abstract class Imoveis {
         return mobiliado || semi_mobiliado;
 
     }
+
     public boolean verificarDisponibilidade(boolean aceitaAluguel, boolean aceitaVenda) {
         // Lógica para verificar a disponibilidade para aluguel e/ou venda
         if (aceitaAluguel && aceitaVenda) {
