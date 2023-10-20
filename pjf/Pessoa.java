@@ -4,7 +4,7 @@ public abstract class Pessoa {
     //atributos de pessoa
     String nome;
     String email;
-    String endereço;
+    String endereco;
     long telefone;
     String dt_nascimento;
     float renda_presumida;
@@ -13,18 +13,16 @@ public abstract class Pessoa {
     double poupança;
 
     //construtor de pessoa
-    public Pessoa (String nome,String email,String endereço,long telefone,
+    public Pessoa (String nome,String email,String endereco,long telefone,
     String dt_nascimento,float renda_presumida,int RG,double saldo){
 
         this.nome=nome;
         this.email=email;
-        this.endereço=endereço;
+        this.endereco=endereco;
         this.telefone=telefone;
         this.dt_nascimento=dt_nascimento;
         this.renda_presumida=renda_presumida;
-
         this.saldo = saldo;
-
     }
     //metodo de soma de salario
     public void depositar_salario(double valor){
@@ -33,7 +31,7 @@ public abstract class Pessoa {
     }
     //metodo de alteração do atributo de endereço
     public void mudar_endereço(String n_endereço, Pessoa individuo){
-        individuo.endereço=n_endereço;
+        individuo.endereco=n_endereço;
         System.out.println("o novo endereço do individuo "+individuo.nome+" é "+n_endereço);
 
     }

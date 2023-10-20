@@ -10,6 +10,7 @@ public class Corretor extends Pessoa {
     public void calcular_comissao(double valor, Imoveis Imovel){
         comissão = Imovel.calcular_valor_imovel() * 0.02;
         comissão += valor;
+        //8============D
         System.out.println(nome+"recebeu a a sua comissão de "+comissão +" reais");
     }
 
