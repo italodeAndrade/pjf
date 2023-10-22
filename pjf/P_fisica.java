@@ -1,4 +1,5 @@
 import java.util.Scanner;
+import java.util.List;
 
 public class P_fisica extends Cliente {
     boolean inter_compra;
@@ -7,8 +8,8 @@ public class P_fisica extends Cliente {
 
     // Construtor
     public P_fisica(String cpf, String nome, String email, String endereco, long telefone, String dt_nascimento,
-                    float renda_presumida, int RG, boolean inter_aluguel, boolean inter_compra, double saldo, int id_imv_c) {
-        super(nome, email, endereco, telefone, dt_nascimento, renda_presumida, RG, saldo, id_imv_c);
+                    float renda_presumida, int RG, boolean inter_aluguel, boolean inter_compra) {
+        super(nome, email, endereco, telefone, dt_nascimento, renda_presumida, RG, 0); // Chama o construtor da superclasse
         this.inter_aluguel = inter_aluguel;
         this.inter_compra = inter_compra;
         this.cpf = cpf;
@@ -33,6 +34,13 @@ public class P_fisica extends Cliente {
 
         System.out.print("RG: ");
         RG = scanner.nextInt();
+        System.out.println("Cliente pessoa física cadastrado com sucesso.");
+    }
 
+    // Adicionar o novo cliente à lista de clientes pessoa física
+    public static List<P_fisica> adicionarClienteALista(List<P_fisica> listaClientes, P_fisica novoCliente) {
+        listaClientes.add(novoCliente);
+        return listaClientes;
     }
 }
+

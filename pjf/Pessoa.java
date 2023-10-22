@@ -14,7 +14,7 @@ public abstract class Pessoa {
 
     //construtor de pessoa
     public Pessoa (String nome,String email,String endereco,long telefone,
-    String dt_nascimento,float renda_presumida,int RG,double saldo){
+    String dt_nascimento,float renda_presumida,int RG){
 
         this.nome=nome;
         this.email=email;
@@ -22,7 +22,6 @@ public abstract class Pessoa {
         this.telefone=telefone;
         this.dt_nascimento=dt_nascimento;
         this.renda_presumida=renda_presumida;
-        this.saldo = saldo;
     }
     //metodo de soma de salario
     public void depositar_salario(double valor){

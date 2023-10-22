@@ -4,8 +4,8 @@ import java.util.Scanner;
 public abstract class Cliente extends Pessoa {
     int id_imv_c;
     public Cliente( String nome, String email, String endereco, long telefone, String dt_nascimento,
-            float renda_presumida, int RG,double saldo, int id_imv_c) {
-        super(nome, email, endereco, telefone, dt_nascimento, renda_presumida, RG, saldo );
+            float renda_presumida, int RG, int id_imv_c) {
+        super(nome, email, endereco, telefone, dt_nascimento, renda_presumida,RG);
         this.id_imv_c=id_imv_c;
     }
 //Método para comprar imovél, efetua a verificação da dispinibilidade do imovél
