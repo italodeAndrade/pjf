@@ -56,9 +56,6 @@ public abstract class Imoveis implements contrato_aluguel{
         return desconto;
     }
 
-    // a valorização e desvalorização acho mais coerente apenas para imoveis velhos, portanto são abstratos
-    public abstract double calcularValorizacao(int anos);
-    public abstract double calcularDesvalorizacao(int anos);
 
     // deixamos esse método ou removemos ele ?
     public int verificarIdade() {
