@@ -1,10 +1,8 @@
-import java.util.Scanner;
-
 //declaração da classe herdada de pessoa
 public abstract class Cliente extends Pessoa {
     int id_imv_c;
     public Cliente( String nome, String email, String endereco, long telefone, String dt_nascimento,
-            float renda_presumida, int RG, int id_imv_c) {
+            float renda_presumida, int RG) {
         super(nome, email, endereco, telefone, dt_nascimento, renda_presumida,RG);
         this.id_imv_c=id_imv_c;
     }

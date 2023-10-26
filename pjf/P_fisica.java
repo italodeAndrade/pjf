@@ -6,41 +6,54 @@ public class P_fisica extends Cliente {
     boolean inter_aluguel;
     String cpf;
 
-    // Construtor
     public P_fisica(String cpf, String nome, String email, String endereco, long telefone, String dt_nascimento,
                     float renda_presumida, int RG, boolean inter_aluguel, boolean inter_compra) {
-        super(nome, email, endereco, telefone, dt_nascimento, renda_presumida, RG, 0); // Chama o construtor da superclasse
+        super(nome, email, endereco, telefone, dt_nascimento, renda_presumida, RG);
         this.inter_aluguel = inter_aluguel;
         this.inter_compra = inter_compra;
         this.cpf = cpf;
     }
 
-    public void cadastrarCliente() {
-        Scanner scanner = new Scanner(System.in);
-
-        System.out.println("Por favor, insira as informações do cliente pessoa física:");
+    public static P_fisica cadastrarCliente(Scanner scanner) {
         System.out.print("CPF: ");
-        cpf = scanner.nextLine();
+        String cpf = scanner.nextLine();
+
+        System.out.print("Nome: ");
+        String nome = scanner.nextLine();
+
+        System.out.print("Email: ");
+        String email = scanner.nextLine();
+
+        System.out.print("Endereço: ");
+        String endereco = scanner.nextLine();
 
         System.out.print("Telefone: ");
-        telefone = scanner.nextLong();
+        long telefone = scanner.nextLong();
         scanner.nextLine();  // Consumir a nova linha pendente
 
         System.out.print("Data de Nascimento: ");
-        dt_nascimento = scanner.nextLine();
+        String dt_nascimento = scanner.nextLine();
 
         System.out.print("Renda Presumida: ");
-        renda_presumida = scanner.nextFloat();
+        float renda_presumida = scanner.nextFloat();
 
         System.out.print("RG: ");
-        RG = scanner.nextInt();
-        System.out.println("Cliente pessoa física cadastrado com sucesso.");
-    }
+        int RG = scanner.nextInt();
+        scanner.nextLine();
 
-    // Adicionar o novo cliente à lista de clientes pessoa física
-    public static List<P_fisica> adicionarClienteALista(List<P_fisica> listaClientes, P_fisica novoCliente) {
-        listaClientes.add(novoCliente);
-        return listaClientes;
+        System.out.print("Interesse em Compra (true/false): ");
+        boolean inter_compra = scanner.nextBoolean();
+
+        System.out.print("Interesse em Aluguel (true/false): ");
+        boolean inter_aluguel = scanner.nextBoolean();
+        scanner.nextLine();
+
+        P_fisica fisicaList = new P_fisica(cpf, nome, email, endereco, telefone, dt_nascimento, renda_presumida, RG, inter_aluguel, inter_compra);
+
+        System.out.println("Cliente pessoa física cadastrado com sucesso.");
+
+        return fisicaList;
     }
 }
+
 
