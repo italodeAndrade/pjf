@@ -5,9 +5,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="8ab18ec2-e8a6-43dc-b1ff-38ccc8bac43f" name="Changes" comment="Criação da interface">
-      <change beforePath="$PROJECT_DIR$/P_fisica.java" beforeDir="false" afterPath="$PROJECT_DIR$/P_fisica.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/P_juridica.java" beforeDir="false" afterPath="$PROJECT_DIR$/P_juridica.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/m1.java" beforeDir="false" afterPath="$PROJECT_DIR$/m1.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Imovel_Velho.java" beforeDir="false" afterPath="$PROJECT_DIR$/Imovel_Velho.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Imovel_novo.java" beforeDir="false" afterPath="$PROJECT_DIR$/Imovel_novo.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -39,6 +38,9 @@
       </UrlAndAccount>
     </option>
   </component>
+  <component name="ProblemsViewState">
+    <option name="selectedTabId" value="ProjectErrors" />
+  </component>
   <component name="ProjectColorInfo">{
   &quot;associatedIndex&quot;: 1
 }</component>
@@ -62,6 +64,20 @@
     &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
 }</component>
+  <component name="RunManager">
+    <configuration name="m1" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="m1" />
+      <module name="pjf" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Application.m1" />
+      </list>
+    </recent_temporary>
+  </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
@@ -80,7 +96,8 @@
       <workItem from="1697755157156" duration="3700000" />
       <workItem from="1698002938773" duration="4541000" />
       <workItem from="1698329495385" duration="2468000" />
-      <workItem from="1698354333194" duration="1690000" />
+      <workItem from="1698354333194" duration="9161000" />
+      <workItem from="1698363597816" duration="1476000" />
     </task>
     <task id="LOCAL-00001" summary="Criação da interface">
       <option name="closed" value="true" />
@@ -100,5 +117,15 @@
     <MESSAGE value="Renomeando os arquivos&#10;&#10;resolvendo conflitos dos arquivos" />
     <MESSAGE value="Criação da interface" />
     <option name="LAST_COMMIT_MESSAGE" value="Criação da interface" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <breakpoint enabled="true" type="java-exception">
+          <properties class="java.util.InputMismatchException" package="java.util" />
+          <option name="timeStamp" value="1" />
+        </breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
 </project>

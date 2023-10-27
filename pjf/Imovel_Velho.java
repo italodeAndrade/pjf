@@ -50,7 +50,7 @@ public class Imovel_Velho extends Imoveis {
 
     // Cadastro de imóveis antigos e armazenamento em uma lista
     public static void cadastrar_Imovel_Velho(Scanner scanner, List<Imovel_Velho> listaImoveis_velhos) {
-        Scanner scanner = new Scanner(System.in);
+//        Scanner scanner = new Scanner(System.in);
 
         System.out.println("Por favor, insira as informações do imóvel velho:");
 

@@ -51,7 +51,7 @@ public class Imovel_novo extends Imoveis {
     // Cadastro de imóveis novos e armazenamento em uma lista
    // Cadastro de imóveis novos e armazenamento em uma lista
 public static void cadastrar_Imovel_novo(Scanner scanner, List<Imovel_novo> listaImoveis_novos) {
-    Scanner scanner = new Scanner(System.in);
+//    Scanner scanner = new Scanner(System.in);
 
     System.out.println("Por favor, insira as informações do imóvel novo:");
 
