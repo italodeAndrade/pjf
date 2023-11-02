@@ -6,41 +6,44 @@ public class m1 {
     public static void main(String[] args) {
         List<Imovel_novo> listaImoveis_novos = new ArrayList<>();
         List<Imovel_Velho> listaImoveis_velhos = new ArrayList<>();
-        List<P_fisica> fisicaList = new ArrayList<>();
-        List<P_juridica> juridicaList = new ArrayList<>();
-        List<Dono_Imovel> listaPessoas = new ArrayList<>();
-       
+   
         Scanner scanner = new Scanner(System.in);
 
         // Cadastrar imóveis novos e velhos
         Imovel_Velho.cadastrar_Imovel_Velho(scanner, listaImoveis_velhos);
         Imovel_novo.cadastrar_Imovel_novo(scanner, listaImoveis_novos);
-
-        // Cadastrar clientes pessoa física
-        System.out.println("Cadastrar cliente pessoa física:");
-        P_fisica clientePF1 = P_fisica.cadastrarCliente(scanner);
-        fisicaList.add(clientePF1);
-
-        // Cadastrar clientes pessoa jurídica
-        System.out.println("Cadastrar cliente pessoa jurídica:");
-        P_juridica clientePJ1 = P_juridica.cadastrarCliente(scanner);
-        juridicaList.add(clientePJ1);
-
         System.out.println(listaImoveis_novos.toString());
         System.out.println(listaImoveis_velhos.toString());
-        System.out.println(fisicaList.toString());
-        System.out.println(juridicaList.toString());
 
-        // Teste Corretor
-        Corretor c = new Corretor(null, null, null, 0, null, 0, 0, 0, 0);
-        System.out.println("Cadastrar Salario do Corretor:");
-        c.depositar_salario();
-        
-        //Teste dono_imovel
-        Dono_Imovel d = new Dono_Imovel(null, null, null, null, 0, null, 0, 0, null, 0, 0);
-        System.out.println("Cadastrar dono do imovel:");
-        d.cadastrarDono_imovel(scanner, listaPessoas);
-        
+        // Cadastrar cliente pessoa física
+        System.out.println("Cadastrar cliente pessoa física:");
+        P_fisica.cadastrarFisica(scanner);
+
+        // Cadastrar cliente pessoa jurídica
+        System.out.println("Cadastrar cliente pessoa jurídica:");
+        P_juridica.cadastrarJuridica(scanner);
+
+        // Cadastrar corretor
+        System.out.println("Cadastrar corretor:");
+        Corretor corretor1 = Corretor.cadastrarCorretor(scanner);
+
+        // Calcular comissão do corretor
+        System.out.println("Calcular comissão para o corretor:");
+        Imovel_Velho imovel = new Imovel_Velho(0, null, null, null, 0, false, false, 0, 0, false, false, 0, null, null); // Substitua com uma instância de Imovel válida
+        corretor1.calcular_comissao(imovel);
+
+        // Visualizar histórico de comissões do corretor
+        System.out.println("Histórico de comissões do corretor:");
+        corretor1.visualizarHistoricoComissoes();
     }
 }
+
+
+
+
+
+
+
+
+
 

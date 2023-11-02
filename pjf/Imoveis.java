@@ -5,7 +5,7 @@ public abstract class Imoveis implements contrato_aluguel{
     String cep;
     String endereco;
     String ano_construcao;
-    double preço;
+    double preco;
     boolean disp_venda;
     boolean disp_alugel;
     int num_quartos;
@@ -28,7 +28,7 @@ public abstract class Imoveis implements contrato_aluguel{
         this.cep = cep;
         this.endereco = endereco;
         this.ano_construcao = ano_construcao;
-        this.preço = preco;
+        this.preco = preco;
         this.disp_venda = dispVenda;
         this.disp_alugel = dispAluguel;
         this.num_quartos = numQuartos;
@@ -81,5 +81,9 @@ public abstract class Imoveis implements contrato_aluguel{
         } else {
             return false; // Não aceita aluguel nem venda
         }
+    }
+
+    public double getpreco() {
+        return 0;
     }
 }

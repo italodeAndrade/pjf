@@ -11,12 +11,10 @@ public abstract class Pessoa {
     String dt_nascimento;
     float renda_presumida;
     int RG;
-    double saldo;
-    double poupança;
 
     //construtor de pessoa
     public Pessoa (String nome,String email,String endereco,long telefone,
-    String dt_nascimento,float renda_presumida,int RG){
+    String dt_nascimento,double d){
 
         this.nome=nome;
         this.email=email;
@@ -25,17 +23,17 @@ public abstract class Pessoa {
         this.dt_nascimento=dt_nascimento;
         this.renda_presumida=renda_presumida;
     }
-    //metodo de soma de salario
-    public void depositar_salario(double valor){
-        saldo+=valor;
-        System.out.println("foi adicionado "+valor+" a conta");
+
+    public Pessoa(String nome2, String email2, String endereco2, long telefone2, String dt_nascimento2, int rG2) {
     }
+
     //metodo de alteração do atributo de endereço
     public void mudar_endereço(String n_endereço, Pessoa individuo){
         individuo.endereco=n_endereço;
         System.out.println("o novo endereço do individuo "+individuo.nome+" é "+n_endereço);
 
     }
+
     //metodo para declarar um imovel como disponivel para venda ou aluguel
     public void disponibilizar_imv(Imoveis imovel){
         imovel.disp_alugel=true;
