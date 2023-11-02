@@ -9,7 +9,7 @@ public class m1 {
         List<P_fisica> fisicaList = new ArrayList<>();
         List<P_juridica> juridicaList = new ArrayList<>();
         List<Dono_Imovel> listaPessoas = new ArrayList<>();
-
+       
         Scanner scanner = new Scanner(System.in);
 
         // Cadastrar imóveis novos e velhos
@@ -32,12 +32,14 @@ public class m1 {
         System.out.println(juridicaList.toString());
 
         // Teste Corretor
+        Corretor c = new Corretor(null, null, null, 0, null, 0, 0, 0, 0);
         System.out.println("Cadastrar Salario do Corretor:");
-        Corretor.depositar_salario(scanner);
+        c.depositar_salario();
         
         //Teste dono_imovel
+        Dono_Imovel d = new Dono_Imovel(null, null, null, null, 0, null, 0, 0, null, 0, 0);
         System.out.println("Cadastrar dono do imovel:");
-        Dono_Imovel.cadastrarDono_imovel(scanner, listaPessoas);
+        d.cadastrarDono_imovel(scanner, listaPessoas);
         
     }
 }

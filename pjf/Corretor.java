@@ -1,4 +1,4 @@
-import java.util.Scanner;
+
 import java.util.List;
 
 public class Corretor extends Pessoa {
@@ -21,12 +21,11 @@ public class Corretor extends Pessoa {
 
 
     //Soma o salario ao saldo total
-    public void depositar_salario(double salario){
-        Scanner scanner = new Scanner(System.in);
+    public void depositar_salario(){
 
         System.out.println("Por Favor, Insira o valor do seu saldo:");
         double saldo = scanner.nextDouble();
-        saldo+=comissão;
+        comissão+= saldo;
         System.out.println("foi depositado "+comissão+" na conta do corretor "+nome);
     }
 }

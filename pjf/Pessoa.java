@@ -1,5 +1,7 @@
+import java.util.Scanner;
 
 public abstract class Pessoa {
+    Scanner scanner = new Scanner(System.in);
 
     //atributos de pessoa
     String nome;

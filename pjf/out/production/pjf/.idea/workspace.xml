@@ -5,8 +5,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="8ab18ec2-e8a6-43dc-b1ff-38ccc8bac43f" name="Changes" comment="Criação da interface">
-      <change beforePath="$PROJECT_DIR$/Imovel_Velho.java" beforeDir="false" afterPath="$PROJECT_DIR$/Imovel_Velho.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Imovel_novo.java" beforeDir="false" afterPath="$PROJECT_DIR$/Imovel_novo.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Corretor.java" beforeDir="false" afterPath="$PROJECT_DIR$/Corretor.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Pessoa.java" beforeDir="false" afterPath="$PROJECT_DIR$/Pessoa.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/m1.java" beforeDir="false" afterPath="$PROJECT_DIR$/m1.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -98,6 +99,8 @@
       <workItem from="1698329495385" duration="2468000" />
       <workItem from="1698354333194" duration="9161000" />
       <workItem from="1698363597816" duration="1476000" />
+      <workItem from="1698365867676" duration="27000" />
+      <workItem from="1698943613651" duration="597000" />
     </task>
     <task id="LOCAL-00001" summary="Criação da interface">
       <option name="closed" value="true" />
