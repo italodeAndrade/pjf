@@ -27,6 +27,10 @@ public class m1 {
         System.out.println("Cadastrar corretor:");
         Corretor corretor1 = Corretor.cadastrarCorretor(scanner);
 
+        // Cadastro do dono do imovel
+         System.out.println("Cadastrar Propretário:");
+         Dono_Imovel.cadastrarDono_imovel(scanner);
+
         // Calcular comissão do corretor
         System.out.println("Calcular comissão para o corretor:");
         Imovel_Velho imovel = new Imovel_Velho(0, null, null, null, 0, false, false, 0, 0, false, false, 0, null, null); // Substitua com uma instância de Imovel válida

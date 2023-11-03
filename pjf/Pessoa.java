@@ -21,7 +21,6 @@ public abstract class Pessoa {
         this.endereco=endereco;
         this.telefone=telefone;
         this.dt_nascimento=dt_nascimento;
-        this.renda_presumida=renda_presumida;
     }
 
     public Pessoa(String nome2, String email2, String endereco2, long telefone2, String dt_nascimento2, int rG2) {
