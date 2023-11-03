@@ -1,3 +1,6 @@
+import java.io.FileOutputStream;
+import java.io.IOException;
+import java.io.ObjectOutputStream;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Scanner;
@@ -28,8 +31,8 @@ public class m1 {
         Corretor corretor1 = Corretor.cadastrarCorretor(scanner);
 
         // Cadastro do dono do imovel
-         System.out.println("Cadastrar Propretário:");
-         Dono_Imovel.cadastrarDono_imovel(scanner);
+        System.out.println("Cadastrar Proprietário:");
+        Dono_Imovel.cadastrarDono_imovel(scanner);
 
         // Calcular comissão do corretor
         System.out.println("Calcular comissão para o corretor:");
@@ -39,8 +42,24 @@ public class m1 {
         // Visualizar histórico de comissões do corretor
         System.out.println("Histórico de comissões do corretor:");
         corretor1.visualizarHistoricoComissoes();
+        
+        // Serialização dos objetos // Salvar objetos persistentes
+        String nomeArquivo = "objetos_serializados.dat";
+        try (ObjectOutputStream outputStream = new ObjectOutputStream(new FileOutputStream(nomeArquivo))) {
+            outputStream.writeObject(listaImoveis_novos);
+            outputStream.writeObject(listaImoveis_velhos);
+            outputStream.writeObject(P_fisica.getListaClientesPF());
+            outputStream.writeObject(P_juridica.getListaClientesPJ());
+            outputStream.writeObject(corretor1);
+            outputStream.writeObject(Dono_Imovel.getListaDonosImoveis());
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
     }
 }
+
+
+
 
 
 

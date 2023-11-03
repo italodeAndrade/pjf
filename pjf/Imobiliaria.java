@@ -5,7 +5,5 @@ public class Imobiliaria {
     double alv_funcion;
     String cntrt_locação;
     double saldo;
-    
-
-    
+     
 }

@@ -19,26 +19,32 @@ public class Dono_Imovel extends Pessoa {
     }
 
     // Cadastro do dono do imovel
-    public static void cadastrarDono_imovel(Scanner scanner) {
-        System.out.println("Por favor, insira as informações do Proprietário:");
+public static void cadastrarDono_imovel(Scanner scanner) {
+     System.out.println("Por favor, insira as informações do Proprietário:");
+ 
+     System.out.print("ID do Imóvel: ");
+     int id_imovel = scanner.nextInt();
+     scanner.nextLine(); // Consumir a nova linha pendente
+ 
+     System.out.print("CNPJ: ");
+     String CNPJ = scanner.nextLine();
+ 
+     System.out.print("CPF: ");
+     String cpf = scanner.nextLine();
+ 
+     Dono_Imovel donoImovel = new Dono_Imovel(cpf, null, null, null, 0, null, 0, id_imovel, CNPJ, id_imovel, 0);
+ 
+     // Adicionar o dono do imóvel à lista
+     listaDonosImoveis.add(donoImovel);
+ }
 
-        System.out.print("ID do Imóvel: ");
-        int id_imovel = scanner.nextInt();
-        scanner.nextLine(); // Consumir a nova linha pendente
+      // Getter para a lista de donos de imóveis
+    public static List<Dono_Imovel> getListaDonosImoveis() {
+     return listaDonosImoveis;
+ }
 
-        System.out.print("CNPJ: ");
-        String CNPJ = scanner.nextLine();
-
-        System.out.print("CPF: ");
-        String cpf = scanner.nextLine();
-
-        Dono_Imovel donoImovel = new Dono_Imovel(cpf, null, null, null, 0, null, 0, id_imovel, CNPJ, id_imovel, 0);
-
-        // Adicionar o dono do imóvel à lista
-        listaDonosImoveis.add(donoImovel);
-    }
-
-    
 }
+
+
 
 
