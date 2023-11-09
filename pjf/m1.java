@@ -7,7 +7,11 @@ import java.util.Scanner;
 
 public class m1 {
     public static void main(String[] args) {
-        List<Imovel_novo> listaImoveis_novos = new ArrayList<>();
+
+        Leitura leitorimoveis= new Leitura();
+        leitorimoveis.importarImoveis();
+        
+         List<Imovel_novo> listaImoveis_novos = new ArrayList<>();
         List<Imovel_Velho> listaImoveis_velhos = new ArrayList<>();
    
         Scanner scanner = new Scanner(System.in);
@@ -55,7 +59,7 @@ try (ObjectOutputStream outputStream = new ObjectOutputStream(new FileOutputStre
 } catch (IOException e) {
     e.printStackTrace();
 }
-    }
+        }
 }
 
 
