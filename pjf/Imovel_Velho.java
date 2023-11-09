@@ -1,7 +1,9 @@
+import java.util.ArrayList;
 import java.util.List;
 import java.util.Scanner;
 
 public class Imovel_Velho extends Imoveis {
+        List <Imovel_novo> lista_Imoveis_velhos= new ArrayList<>();
     public Imovel_Velho(double area, String cep, String endereco, String ano_construcao,
         double preco, boolean dispVenda, boolean dispAluguel, int numQuartos, double vlrAluguel,
         boolean mobiliado, boolean semiMobiliado, int id_imovel, String dt_inic_aluguel, String dt_fn_aluguel) {
