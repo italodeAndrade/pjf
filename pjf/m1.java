@@ -44,17 +44,17 @@ public class m1 {
         corretor1.visualizarHistoricoComissoes();
         
         // Serialização dos objetos // Salvar objetos persistentes
-        String nomeArquivo = "objetos_serializados.dat";
-        try (ObjectOutputStream outputStream = new ObjectOutputStream(new FileOutputStream(nomeArquivo))) {
-            outputStream.writeObject(listaImoveis_novos);
-            outputStream.writeObject(listaImoveis_velhos);
-            outputStream.writeObject(P_fisica.getListaClientesPF());
-            outputStream.writeObject(P_juridica.getListaClientesPJ());
-            outputStream.writeObject(corretor1);
-            outputStream.writeObject(Dono_Imovel.getListaDonosImoveis());
-        } catch (IOException e) {
-            e.printStackTrace();
-        }
+String nomeArquivo = "objetos_serializados.dat";
+try (ObjectOutputStream outputStream = new ObjectOutputStream(new FileOutputStream(nomeArquivo))) {
+    outputStream.writeObject(listaImoveis_novos);
+    outputStream.writeObject(listaImoveis_velhos);
+    outputStream.writeObject(P_fisica.getListaClientesPF());
+    outputStream.writeObject(P_juridica.getListaClientesPJ());
+    outputStream.writeObject(corretor1);
+    outputStream.writeObject(Dono_Imovel.getListaDonosImoveis());
+} catch (IOException e) {
+    e.printStackTrace();
+}
     }
 }
 
