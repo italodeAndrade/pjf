@@ -4,11 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="8ab18ec2-e8a6-43dc-b1ff-38ccc8bac43f" name="Changes" comment="Criação da interface">
-      <change beforePath="$PROJECT_DIR$/Corretor.java" beforeDir="false" afterPath="$PROJECT_DIR$/Corretor.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Pessoa.java" beforeDir="false" afterPath="$PROJECT_DIR$/Pessoa.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/m1.java" beforeDir="false" afterPath="$PROJECT_DIR$/m1.java" afterDir="false" />
-    </list>
+    <list default="true" id="8ab18ec2-e8a6-43dc-b1ff-38ccc8bac43f" name="Changes" comment="Criação da interface" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -100,7 +96,8 @@
       <workItem from="1698354333194" duration="9161000" />
       <workItem from="1698363597816" duration="1476000" />
       <workItem from="1698365867676" duration="27000" />
-      <workItem from="1698943613651" duration="597000" />
+      <workItem from="1698943613651" duration="610000" />
+      <workItem from="1698964058068" duration="613000" />
     </task>
     <task id="LOCAL-00001" summary="Criação da interface">
       <option name="closed" value="true" />
