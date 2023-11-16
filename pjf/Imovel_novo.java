@@ -1,6 +1,7 @@
 import java.util.List;
 import java.util.ArrayList;
 import java.util.Scanner;
+import java.io.Serializable;
 
 public class Imovel_novo extends Imoveis implements Serializable{
     List <Imovel_novo> lista_Imoveis_novos= new ArrayList<>();
@@ -51,7 +52,6 @@ public class Imovel_novo extends Imoveis implements Serializable{
     }
 
     // Cadastro de imóveis novos e armazenamento em uma lista
-   // Cadastro de imóveis novos e armazenamento em uma lista
 public static void cadastrar_Imovel_novo(Scanner scanner, List<Imovel_novo> listaImoveis_novos) {
 //    Scanner scanner = new Scanner(System.in);
 

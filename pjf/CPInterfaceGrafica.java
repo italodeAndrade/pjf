@@ -1,11 +1,10 @@
 import javax.swing.*;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
-import java.util.Scanner;
 
 public class CPInterfaceGrafica {
-    private static Corretor corretorAtual;
-    private static Dono_Imovel donoImovelAtual;
+    private static String nomeCorretor;
+    private static String cpfDonoImovel;
 
     public static void main(String[] args) {
         JFrame frame = new JFrame("Interface Gráfica Corretor e Dono de Imóvel");
@@ -48,63 +47,26 @@ public class CPInterfaceGrafica {
 
         cadastrarCorretorButton.addActionListener(new ActionListener() {
             public void actionPerformed(ActionEvent e) {
-                corretorAtual = Corretor.cadastrarCorretor(new Scanner(System.in));
-                corretorTextField.setText(corretorAtual.getNome());
+                nomeCorretor = JOptionPane.showInputDialog("Informe o nome do corretor:");
+                corretorTextField.setText(nomeCorretor);
 
-                if (donoImovelAtual != null) {
-                    corretorAtual.setDonoImovelResponsavel(donoImovelAtual);
-                    donoImovelAtual.setCorretorResponsavel(corretorAtual);
+                if (cpfDonoImovel != null) {
+                    JOptionPane.showMessageDialog(null, "Corretor cadastrado com sucesso e associado ao Dono de Imóvel.");
                 }
             }
         });
 
         cadastrarDonoImovelButton.addActionListener(new ActionListener() {
             public void actionPerformed(ActionEvent e) {
-                donoImovelAtual = Dono_Imovel.cadastrarDono_imovel(new Scanner(System.in));
-                donoImovelTextField.setText(donoImovelAtual.getCPF());
+                cpfDonoImovel = JOptionPane.showInputDialog("Informe o CPF do dono do imóvel:");
+                donoImovelTextField.setText(cpfDonoImovel);
 
-                if (corretorAtual != null) {
-                    donoImovelAtual.setCorretorResponsavel(corretorAtual);
-                    corretorAtual.setDonoImovelResponsavel(donoImovelAtual);
+                if (nomeCorretor != null) {
+                    JOptionPane.showMessageDialog(null, "Dono de Imóvel cadastrado com sucesso e associado ao Corretor.");
                 }
             }
         });
     }
 }
 
-class Corretor {
-    private String nome;
-    
-    public static Corretor cadastrarCorretor(Scanner scanner) {
-        System.out.println("Preencha as informações do corretor:");
-        System.out.print("Nome: ");
-        return new Corretor();
-    }
-
-    public String getNome() {
-        return nome;
-    }
-
-    public void setDonoImovelResponsavel(Dono_Imovel donoImovel) {
-        // Lógica para associar o Dono_Imovel a este Corretor
-    }
-}
-
-class Dono_Imovel {
-    private String CPF;
-
-    public static Dono_Imovel cadastrarDono_imovel(Scanner scanner) {
-        System.out.println("Por favor, insira as informações do Proprietário:");
-        System.out.print("CPF: ");
-        return new Dono_Imovel();
-    }
-
-    public String getCPF() {
-        return CPF;
-    }
-
-    public void setCorretorResponsavel(Corretor corretor) {
-        // Lógica para associar o Corretor a este Dono_Imovel
-    }
-}
 
