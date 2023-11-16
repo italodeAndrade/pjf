@@ -106,4 +106,8 @@ class Dono_Imovel {
 
     public void setCorretorResponsavel(Corretor corretor) {
     }
+
+    public static Object getListaDonosImoveis() {
+        return null;
+    }
 }

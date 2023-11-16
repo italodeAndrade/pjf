@@ -36,13 +36,6 @@ public class m1 {
         System.out.println("Cadastrar Proprietário:");
         Dono_Imovel.cadastrarDono_imovel(scanner);
 
-        System.out.println("Calcular comissão para o corretor:");
-        Imovel_Velho imovel = new Imovel_Velho(0, null, null, null, 0, false, false, 0, 0, false, false, 0, null, null);
-        corretor1.calcular_comissao(imovel);
-
-        System.out.println("Histórico de comissões do corretor:");
-        corretor1.visualizarHistoricoComissoes();
-
         String nomeArquivo = "objetos_serializados.dat";
         try (ObjectOutputStream outputStream = new ObjectOutputStream(new FileOutputStream(nomeArquivo))) {
             outputStream.writeObject(listaImoveisNovos);
