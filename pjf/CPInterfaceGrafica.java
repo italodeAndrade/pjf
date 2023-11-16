@@ -48,11 +48,9 @@ public class CPInterfaceGrafica {
 
         cadastrarCorretorButton.addActionListener(new ActionListener() {
             public void actionPerformed(ActionEvent e) {
-                Scanner scanner = new Scanner(System.in);
-                corretorAtual = Corretor.cadastrarCorretor(scanner);
+                corretorAtual = Corretor.cadastrarCorretor(new Scanner(System.in));
                 corretorTextField.setText(corretorAtual.getNome());
 
-                // Se já houver um Dono_Imovel selecionado, associa o Corretor a ele
                 if (donoImovelAtual != null) {
                     corretorAtual.setDonoImovelResponsavel(donoImovelAtual);
                     donoImovelAtual.setCorretorResponsavel(corretorAtual);
@@ -62,11 +60,9 @@ public class CPInterfaceGrafica {
 
         cadastrarDonoImovelButton.addActionListener(new ActionListener() {
             public void actionPerformed(ActionEvent e) {
-                Scanner scanner = new Scanner(System.in);
-                donoImovelAtual = Dono_Imovel.cadastrarDono_imovel(scanner);
+                donoImovelAtual = Dono_Imovel.cadastrarDono_imovel(new Scanner(System.in));
                 donoImovelTextField.setText(donoImovelAtual.getCPF());
 
-                // Se já houver um Corretor selecionado, associa o Dono_Imovel a ele
                 if (corretorAtual != null) {
                     donoImovelAtual.setCorretorResponsavel(corretorAtual);
                     corretorAtual.setDonoImovelResponsavel(donoImovelAtual);
@@ -78,9 +74,10 @@ public class CPInterfaceGrafica {
 
 class Corretor {
     private String nome;
+    
     public static Corretor cadastrarCorretor(Scanner scanner) {
         System.out.println("Preencha as informações do corretor:");
-        // Implemente a lógica para preencher os dados do corretor e criar a instância de Corretor
+        System.out.print("Nome: ");
         return new Corretor();
     }
 
@@ -89,14 +86,16 @@ class Corretor {
     }
 
     public void setDonoImovelResponsavel(Dono_Imovel donoImovel) {
+        // Lógica para associar o Dono_Imovel a este Corretor
     }
 }
 
 class Dono_Imovel {
     private String CPF;
+
     public static Dono_Imovel cadastrarDono_imovel(Scanner scanner) {
         System.out.println("Por favor, insira as informações do Proprietário:");
-        // Implemente a lógica para preencher os dados do dono do imóvel e criar a instância de Dono_Imovel
+        System.out.print("CPF: ");
         return new Dono_Imovel();
     }
 
@@ -105,9 +104,7 @@ class Dono_Imovel {
     }
 
     public void setCorretorResponsavel(Corretor corretor) {
-    }
-
-    public static Object getListaDonosImoveis() {
-        return null;
+        // Lógica para associar o Corretor a este Dono_Imovel
     }
 }
+

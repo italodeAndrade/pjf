@@ -2,7 +2,7 @@ import java.util.ArrayList;
 import java.util.List;
 import java.util.Scanner;
 
-public class Imovel_Velho extends Imoveis {
+public class Imovel_Velho extends Imoveis implements Serializable{
         List <Imovel_Velho> lista_Imoveis_velhos= new ArrayList<>();
     public Imovel_Velho(double area, String cep, String endereco, String ano_construcao,
         double preco, boolean dispVenda, boolean dispAluguel, int numQuartos, double vlrAluguel,
