@@ -44,24 +44,13 @@ public abstract class Imoveis implements contrato_aluguel{
 
     // Métodos de imoveis
 
-    // O valor/alugel do imovel é abstrato pois será diferente para a idade do imovel
     public abstract double calcular_valor_imovel();
     public abstract double calcular_valor_aluguel();
 
-    //uma ideia que eu tive sobre o desconto é ofrecer apenas para compra à vista
-    // Método concreto para calcular o valor do desconto (implementação padrão)
     public double calcular_valor_desconto(double valorCompraAVista) {
         // Lógica de cálculo de desconto (pode ser a mesma para todos os tipos de imóveis)
         double desconto = valorCompraAVista * 0.10; // Exemplo de desconto de 10%
         return desconto;
-    }
-
-
-    // deixamos esse método ou removemos ele ?
-    public int verificarIdade() {
-        int anoAtual = 2023;
-        int idade = anoAtual - Integer.parseInt(ano_construcao);
-        return idade;
     }
 
     // será igual nos 2 tipos de imoveis
