@@ -4,7 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="8ab18ec2-e8a6-43dc-b1ff-38ccc8bac43f" name="Changes" comment="Criação da interface" />
+    <list default="true" id="8ab18ec2-e8a6-43dc-b1ff-38ccc8bac43f" name="Changes" comment="Criação da interface">
+      <change beforePath="$PROJECT_DIR$/out/production/pjf/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/pjf/.idea/workspace.xml" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -36,7 +38,7 @@
     </option>
   </component>
   <component name="ProblemsViewState">
-    <option name="selectedTabId" value="ProjectErrors" />
+    <option name="selectedTabId" value="CurrentFile" />
   </component>
   <component name="ProjectColorInfo">{
   &quot;associatedIndex&quot;: 1
@@ -97,7 +99,9 @@
       <workItem from="1698363597816" duration="1476000" />
       <workItem from="1698365867676" duration="27000" />
       <workItem from="1698943613651" duration="610000" />
-      <workItem from="1698964058068" duration="613000" />
+      <workItem from="1698964058068" duration="622000" />
+      <workItem from="1699564078346" duration="2050000" />
+      <workItem from="1699975274815" duration="770000" />
     </task>
     <task id="LOCAL-00001" summary="Criação da interface">
       <option name="closed" value="true" />

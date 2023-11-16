@@ -19,7 +19,7 @@ public class Dono_Imovel extends Pessoa {
     }
 
     // Cadastro do dono do imovel
-public static void cadastrarDono_imovel(Scanner scanner) {
+public static Dono_Imovel cadastrarDono_imovel(Scanner scanner) {
      System.out.println("Por favor, insira as informações do Proprietário:");
  
      System.out.print("ID do Imóvel: ");
@@ -36,12 +36,20 @@ public static void cadastrarDono_imovel(Scanner scanner) {
  
      // Adicionar o dono do imóvel à lista
      listaDonosImoveis.add(donoImovel);
+    return donoImovel;
  }
 
       // Getter para a lista de donos de imóveis
     public static List<Dono_Imovel> getListaDonosImoveis() {
      return listaDonosImoveis;
  }
+
+    public void setCorretorResponsavel(Corretor corretorAtual) {
+    }
+
+    public String getCPF() {
+        return null;
+    }
 
 }
 
